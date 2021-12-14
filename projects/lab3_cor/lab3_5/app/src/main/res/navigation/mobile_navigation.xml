@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/firstFr">
+
+    <fragment
+        android:id="@+id/firstFr"
+        android:name="makhonko.lab3_5.Fragment1"
+        tools:layout="@layout/fragment1"
+        android:label="first fragment">
+        <action
+            android:id="@+id/first_to_second"
+            app:destination="@id/secondFr"
+            />
+        <action
+            android:id="@+id/action_firstFr_to_activityAbout"
+            app:destination="@id/activity_about" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFr"
+        android:name="makhonko.lab3_5.Fragment2"
+        tools:layout="@layout/fragment2"
+        android:label="second fragment">
+        <action
+            android:id="@+id/second_to_first"
+            app:destination="@id/firstFr"
+            app:popUpTo="@id/firstFr"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/second_to_third"
+            app:destination="@id/thirdFr"
+            />
+        <action
+            android:id="@+id/action_secondFr_to_activityAbout"
+            app:destination="@id/activity_about" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFr"
+        android:name="makhonko.lab3_5.Fragment3"
+        tools:layout="@layout/fragment3"
+        android:label="third fragment">
+        <action
+            android:id="@+id/third_to_second"
+            app:destination="@id/secondFr"
+            app:popUpTo="@id/secondFr"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/third_to_first"
+            app:destination="@id/firstFr"
+            app:popUpTo="@id/firstFr"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_thirdFr_to_activityAbout"
+            app:destination="@id/activity_about" />
+    </fragment>
+    <activity
+        android:name="makhonko.lab3_5.ActivityAbout"
+        android:id="@+id/activity_about"
+        android:label="ActivityAbout"/>
+</navigation>

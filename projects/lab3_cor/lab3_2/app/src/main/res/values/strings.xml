@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab3_2</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="to_the_second">to the second</string>
+    <string name="to_the_first">to the first</string>
+    <string name="to_the_third">to the third</string>
+    <string name="texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext">TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</string>
+</resources>
